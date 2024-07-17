@@ -1,0 +1,7 @@
+[package]
+name = "rustskillgraph"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+byte_reader = "3.1.1"

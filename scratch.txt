@@ -1,0 +1,26 @@
+10 bytes unknown                                //(03 00 07 01 06 10 10 28 48 48) ????
+
+u32: number of root nodes                       //(0a 00 00 00 -> 10)
+{
+    u32: node_id
+}
+
+u32: number of groups                           //(9b 02 00 00 -> 667)
+{
+    f32: xloc
+    f32: yloc
+
+    9 bytes unknown                             //(00 00 00 00 00 00 00 00 00)
+
+    u32: number of nodes in group               //(0f 00 00 00 -> 15)
+    {
+        u32: node_id                            //(e9 16 00 00 -> 5865)
+        u32: orbit                              //(02 00 00 00 -> 2)
+        u32: orbit_index                        //(05 00 00 00 -> 5)
+
+        u32: number of outgoing edges           //(01 00 00 00 -> 1)
+        {
+            u32: node_id                        //(37 24 00 00 -> 9271)
+        }
+    }
+}
