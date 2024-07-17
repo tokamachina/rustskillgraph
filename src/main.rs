@@ -43,7 +43,6 @@ fn main() {
                 let new_edge: u32 = get_next_as_u32(&mut br);
                 println!("new edge: {}", &new_edge);
                 edges.push(new_edge);
-                if _k > 20 {break};
             }
 
             let new_node: PsgNode = PsgNode {
