@@ -44,7 +44,7 @@ fn main() {
 
             for _k in 0..edge_count {
                 let new_edge: u32 = get_next_as_u32(&mut br);
-                writeln!(&mut output, "new edge: {}", &new_edge).unwrap();
+                writeln!(&mut output, "adjacent to: {}", &new_edge).unwrap();
                 edges.push(new_edge);
             }
 
